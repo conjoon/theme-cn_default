@@ -38,7 +38,7 @@ describe('conjoon.cn_default.overrides.cn_treenavviewport.view.NavigationToolbar
 
             toolbar = Ext.create('conjoon.cn_treenavviewport.view.NavigationToolbar');
 
-            t.expect(toolbar.down('component').reference).toContain('cn_app_ref_applogo');
+            t.expect(toolbar.down('component').reference).toContain('cn_treenavviewport_ref_applogo');
 
             t.expect(toolbar.down('button').reference).toContain('cn_treenavviewport_ref_hidenavbtn');
         });

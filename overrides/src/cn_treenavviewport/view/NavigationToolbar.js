@@ -27,17 +27,21 @@ Ext.define('conjoon.cn_default.overrides.cn_treenavviewport.view.NavigationToolb
 
     override : 'conjoon.cn_treenavviewport.view.NavigationToolbar',
 
-    items : [{
-        xtype     : 'component',
-        reference : 'cn_app_ref_applogo',
-        cls       : 'conjoon-logo',
-        html      : '<div class="main-logo"><div class="x-fa fa-envelope logo"></div>conjoon</div>',
-        width     : 250
-    }, {
-        xtype     : 'button',
-        reference : 'cn_treenavviewport_ref_hidenavbtn',
-        iconCls   : 'x-fa fa-navicon'
-    }]
+    initComponent : function() {
+
+        var me = this;
+
+        Ext.apply(me.items[0], {
+            cls   : 'conjoon-logo',
+            html  : '<div class="main-logo"><div class="x-fa fa-envelope logo"></div>conjoon</div>',
+            width : 250
+        });
+
+        delete me.items[1].text;
+        me.items[1].iconCls =  'x-fa fa-navicon';
+
+        me.callParent();
+    }
 
 
 });
