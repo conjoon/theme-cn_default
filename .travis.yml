@@ -1,3 +1,9 @@
+# conjoon
+# (c) 2007-2017 conjoon.org
+# licensing@conjoon.org
+#
+# conjoon / theme-cn_default
+#
 # This is the very basic travis configuration for the theme-cn_default
 # package of the conjoon Open Source Project. It simply creates a
 # workspace, adds this package and tries to build it.
