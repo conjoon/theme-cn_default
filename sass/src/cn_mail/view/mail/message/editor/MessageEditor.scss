@@ -91,4 +91,26 @@
         border-left : none;
     }
 
+    .attachmentlist-wrap {
+        border         : 4px dashed lighten($base-color, 25%);
+        border-radius  : 20px;
+
+        &.hover {
+            background-color : lighten($base-color, 28%);
+            border-color     : $lightest-color;
+            .dropzone-text {
+                color : $lightest-color;
+            }
+        }
+
+        .dropzone-text {
+            position    : absolute;
+            margin      : 10px;
+            margin-top  : 20px;
+            line-height : 1.2em;
+            font-size   : 2em;
+            color       : lighten($base-color, 28%);
+            text-align  : center;
+        }
+    }
 }
