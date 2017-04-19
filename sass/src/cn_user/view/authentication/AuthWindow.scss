@@ -24,4 +24,34 @@
 
     @include background-image(radial-gradient(center, ellipse cover, #ffffff 0%,#35baf6 40%,#32404e 100%));
 
+    .copyrights {
+
+        background : rgba(0,0,0,0.12);
+
+        .cont {
+            padding    : 20px;
+            text-align : right;
+
+            span {
+                margin-left : 20px;
+
+                a {
+                    color : darken($lightest-color, 20%);
+                    &:visited {
+                        color : darken($lightest-color, 20%);
+                    }
+                }
+            }
+            .prod {
+                font-weight : bold;
+                color       : $lightest-color;
+            }
+            .meta {
+                margin-top : 14px;
+                color      : darken($lightest-color, 50%);
+            }
+
+        }
+    }
+
 }
