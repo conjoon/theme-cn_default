@@ -22,7 +22,9 @@
 
 $lightest-color : #ffffff;
 
-$panel-navigation-background-color : #32404e;
+$color-soft-darkblue : #32404e;
+
+$panel-navigation-background-color : $color-soft-darkblue;
 $panel-navigation-item-line-height : 64px;
 $panel-navigation-item-text-color  : #ADB3B8;
 

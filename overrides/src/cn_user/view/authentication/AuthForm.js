@@ -32,6 +32,10 @@ Ext.define('conjoon.cn_default.overrides.cn_user.view.authentication.AuthForm', 
 
         var me = this;
 
+        Ext.apply(me.items[0], {
+            cls : 'x-fa head-label'
+        });
+
         Ext.apply(me.items[1], {
             height    : 55,
             hideLabel : true,
@@ -53,7 +57,7 @@ Ext.define('conjoon.cn_default.overrides.cn_user.view.authentication.AuthForm', 
         });
 
         Ext.apply(me.items[3], {
-            ui        : 'cn-btn-xl-soft-green',
+            ui        : 'cn-btn-xl-soft-darkblue',
             scale     : 'large',
             iconAlign : 'right'
         });

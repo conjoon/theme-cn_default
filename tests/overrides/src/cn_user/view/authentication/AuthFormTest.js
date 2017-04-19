@@ -38,6 +38,9 @@ describe('conjoon.cn_default.overrides.cn_user.view.authentication.AuthForm', fu
 
             var form = Ext.create('conjoon.cn_user.view.authentication.AuthForm', {renderTo : document.body});
 
+            t.expect(form.items.getAt(0).cls).toContain('x-fa');
+            t.expect(form.items.getAt(0).cls).toContain('head-label');
+
             t.expect(form.items.getAt(1).getHeight()).toBe(55);
             t.expect(form.items.getAt(1).hideLabel).toBe(true);
             t.expect(form.items.getAt(1).getTriggers().glyphed.cls).toBe('trigger-glyph-noop auth-email-trigger');
@@ -47,7 +50,7 @@ describe('conjoon.cn_default.overrides.cn_user.view.authentication.AuthForm', fu
             t.expect(form.items.getAt(2).getTriggers().glyphed.cls).toBe('trigger-glyph-noop auth-password-trigger');
 
             t.expect(form.items.getAt(3).scale).toBe('large');
-            t.expect(form.items.getAt(3).ui).toBe('cn-btn-xl-soft-green-' + form.items.getAt(3).scale);
+            t.expect(form.items.getAt(3).ui).toBe('cn-btn-xl-soft-darkblue-' + form.items.getAt(3).scale);
             t.expect(form.items.getAt(3).iconAlign).toBe('right');
 
         });

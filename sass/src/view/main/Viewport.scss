@@ -21,10 +21,10 @@
  */
 
 @include extjs-button-large-ui(
-    $ui               : 'cn-btn-xl-soft-green',
+    $ui               : 'cn-btn-xl-soft-darkblue',
     $line-height      : 34px,
-    $background-color : $color-soft-green,
-    $border-color     : darken($color-soft-green, 5%)
+    $background-color : lighten($color-soft-darkblue, 15%),
+    $border-color     : lighten($color-soft-darkblue, 10%)
 );
 
 @include extjs-button-small-ui(

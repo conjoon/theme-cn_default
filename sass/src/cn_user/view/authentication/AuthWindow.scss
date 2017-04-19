@@ -21,5 +21,7 @@
  */
 
 .cn_user-authwindow {
-    // intentionally left empty
+
+    @include background-image(radial-gradient(center, ellipse cover, #ffffff 0%,#35baf6 40%,#32404e 100%));
+
 }
