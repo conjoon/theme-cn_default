@@ -60,6 +60,13 @@
 
     }
 
+    /**
+     * Removes yellowish bg of autofill-fields in webkit browsers
+     */
+    input:-webkit-autofill{
+        box-shadow : 0 0 0px 1000px white inset;
+    }
+
     .head-label {
         &:before {
             content:"\f0e0";
