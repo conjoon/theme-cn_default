@@ -1,0 +1,66 @@
+/**
+ * conjoon
+ * (c) 2007-2017 conjoon.org
+ * licensing@conjoon.org
+ *
+ * theme-cn_default
+ * Copyright (C) 2017 Thorsten Suckow-Homberg/conjoon.org
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+.cn_comp-loadmask {
+
+    background-color : rgba(255,255,255,0.6);
+
+    .x-mask-msg {
+
+        border-radius : 6px;
+        border        : 1px solid darken($lightest-color, 10%);
+        display       : flex;
+
+        @include box-shadow(6px, 6px, 16px, 0, rgba(0,0,0,0.2));
+        background-color : $lightest-color;
+
+        .badge {
+            background-color : $base-color;
+            border-radius    : 24px;
+            width            : 50px;
+            margin           : 2px 12px 0px 0px;
+            height           : 50px;
+            color            : white;
+            font-size        : 31px;
+            line-height      : 48px;
+            text-align       : center;
+        }
+
+        .x-mask-msg-text {
+            padding     : 0px;
+            background  : none;
+            font-weight : bold;
+        }
+
+        .progress {
+            height           : 2px;
+            background-color : #cecece;
+            margin           : 8px 0px 8px 0px;
+
+            div {
+                height           : 2px;
+                background-color : $base-color;
+                transition       : width 0.2s ease-in-out;
+            }
+        }
+    }
+}
