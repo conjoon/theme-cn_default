@@ -22,12 +22,20 @@
 
 .cn_user-authform {
 
+    border        : 1px solid darken($lightest-color, 10%);
     border-radius : 6px;
-    background    : rgba(0,0,0,0.12);
-    @include box-shadow(6px, 6px, 16px, 0, rgba(0,0,0,0.2));
+    background    : white;
+    overflow      : visible!important;
+    @include box-shadow(32px, 32px, 48px, 0, rgba(0,0,0,0.2));
 
     .x-panel-body-default {
         background : none;
+        overflow   : visible;
+    }
+
+    .x-box-inner,
+    .x-panel-bodyWrap {
+        overflow : visible;
     }
 
     .x-form-text-default {
@@ -68,11 +76,20 @@
     }
 
     .head-label {
-        &:before {
-            content:"\f0e0";
-            margin-right:6px;
+        &.badge {
+            background-color : $base-color;
+            z-index          : 2;
+            border-radius    : 36px;
+            top              : -55px!important;
+            left             : 144px!important;
+            border           : 7px double white;
+            width            : 70px!important;
+            height           : 70px;
+            color            : white;
+            font-size        : 31px;
+            line-height      : 52px;
+            text-align       : center;
         }
-        color : $lightest-color;
     }
 
     .x-btn {

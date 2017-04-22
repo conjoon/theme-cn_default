@@ -33,7 +33,9 @@ Ext.define('conjoon.cn_default.overrides.cn_user.view.authentication.AuthForm', 
         var me = this;
 
         Ext.apply(me.items[0], {
-            cls : 'x-fa head-label'
+            cls    : 'x-fa fa-envelope badge head-label',
+            text   : undefined,
+            margin : '-40 0 0 0'
         });
 
         Ext.apply(me.items[1], {

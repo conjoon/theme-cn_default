@@ -22,11 +22,11 @@
 
 .cn_user-authwindow {
 
-    @include background-image(radial-gradient(center, ellipse cover, #ffffff 0%,#35baf6 40%,#32404e 100%));
+    background : darken($lightest-color, 5%);
 
     .copyrights {
 
-        background : rgba(0,0,0,0.12);
+        background : $color-soft-darkblue;
 
         .cont {
             padding    : 20px;
