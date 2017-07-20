@@ -24,6 +24,21 @@
 
     background-color : $lightest-color;
 
+    .emptyMessage {
+
+        .icon {
+            color         : lighten($base-color, 30%);
+            font-size     : 96px;
+            margin-bottom : 12px;
+        }
+
+        position   : relative;
+        text-align : center;
+        font-size  : 14px;
+        top        : 50%;
+        transform  : translateY(-50%);
+    }
+
     .cn_mail-header {
         border-bottom : 1px solid $mail-border-color;
 

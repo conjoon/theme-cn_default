@@ -22,6 +22,19 @@
 
 .cn_mail-mailmessagegrid {
 
+    .previewEnabled {
+        .x-grid-item-focused .x-grid-cell-inner:before {
+            border : 0;
+        }
+    }
+
+    .previewDisabled {
+
+        .x-grid-rowbody-tr {
+            display : none;
+        }
+    }
+
     .x-grid-item-selected {
         background-color : $mail-item-selected-color;
     }
@@ -40,6 +53,34 @@
 
     .x-grid-cell-special{
         border-right-width : 0;
+    }
+
+    .x-grid-cell.previewLarge {
+        font-size : 14px;
+    }
+
+
+    .cn_mail-mailmessagepreviewfeature{
+
+        .x-grid-rowbody {
+            padding-top : 0px;
+        }
+
+        .subject {
+            white-space   : nowrap;
+            text-overflow : ellipsis;
+            &.unread {
+                color : $base-color;
+                font-weight : bold;
+            }
+        }
+
+        .previewText {
+            padding       : 4px 0px 4px 0px;
+            white-space   : nowrap;
+            text-overflow : ellipsis;
+            color         : lighten($darkest-color, 50%);
+        }
     }
 
 }
