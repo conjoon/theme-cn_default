@@ -34,3 +34,31 @@
     $color                 : $button-lightest-color,
     $background-color-over : $button-lightest-hover-background-color
 );
+
+
+.x-mask {
+    background-color : $lightest-color;
+
+    .x-mask-msg {
+        background-color : $lightest-color;
+    }
+
+    .x-mask-msg-text {
+
+        &:before {
+            font-family : FontAwesome;
+            color       : lighten($base-color, 30%);
+            font-size   : 96px;
+            display     : block;
+            text-align  : center;
+            content     : "\f110";
+            animation   : fa-spin 2s infinite linear;
+            margin      : 0 0 12px 0;
+        }
+
+        padding          : 0;
+        text-align       : center;
+        background-image : none;
+        font-size        : 14px;
+    }
+}
