@@ -35,6 +35,15 @@
         }
     }
 
+    .x-panel-header {
+        background : none;
+        border     : none;
+
+        .x-title-text {
+            color : $color;
+        }
+    }
+
     .x-grid-item-selected {
         background-color : $mail-item-selected-color;
     }

@@ -56,6 +56,8 @@
         .message-subject {
             line-height : 1.7em;
 
+            padding : 5px;
+
             .from {
                 font-size : 16px;
             }
@@ -69,21 +71,19 @@
             .subject {
                 font-size     : 22px;
                 max-width     : 95%;
-                padding-top   : 4px;
+                padding       : 4px 0 2px 0;
                 text-overflow : ellipsis;
                 white-space   : nowrap;
+                overflow      : hidden;
             }
         }
 
     }
 
     .cn_mail-body {
-
-        font-size: 14px;
-        line-height: 1.6em;
-        padding-top: 8px;
-        padding-bottom: 14px;
-        padding-left:26px;
+        font-size   : 14px;
+        line-height : 1.6em;
+        padding     : 8px 26px 14px 26px;
     }
 
     .cn_mail-top-toolbar {
