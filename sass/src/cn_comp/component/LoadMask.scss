@@ -22,7 +22,7 @@
 
 .cn_comp-loadmask {
 
-    background-color : rgba(255,255,255,0.6);
+    background-color : rgba(255,255,255,0.6)!important;
 
     .x-mask-msg {
 
@@ -32,6 +32,16 @@
 
         @include box-shadow(6px, 6px, 16px, 0, rgba(0,0,0,0.2));
         background-color : $lightest-color;
+
+        .x-mask-msg-text {
+            padding     : 0px;
+            background  : none;
+            font-weight : bold;
+            text-align  : left;
+            &:before {
+                display : none;
+            }
+        }
 
         .badge {
             background-color : $base-color;
@@ -43,12 +53,6 @@
             font-size        : 31px;
             line-height      : 48px;
             text-align       : center;
-        }
-
-        .x-mask-msg-text {
-            padding     : 0px;
-            background  : none;
-            font-weight : bold;
         }
 
         .progress {
