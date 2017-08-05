@@ -30,7 +30,7 @@
             font-size  : 176px;
             text-align : center;
             display    : block!important;
-            color      : darken($lightest-color, 5%);
+            color      : darken($lightest-color, 20%);
         }
 
         background-color : $lightest-color;
@@ -42,11 +42,14 @@
             padding     : 0px;
             background  : none;
             font-weight : bold;
-            color       : darken($lightest-color, 20%);
+            color       : darken($lightest-color, 40%);
+            &:before {
+                display : none;
+            }
         }
 
         .message {
-            color      : darken($lightest-color, 20%);
+            color      : darken($lightest-color, 40%);
             min-width  : 250px;
             max-width  : 350px;
             padding    : 5px 0 5px 0;
@@ -58,7 +61,7 @@
             display    : flex;
             margin-top : 20px;
 
-            .left, .right {
+            .left, .right, .center {
                 flex : 1;
             }
 
@@ -67,6 +70,9 @@
             }
             .right {
                 text-align : right;
+            }
+            .center {
+                text-align : center;
             }
 
             .button {
