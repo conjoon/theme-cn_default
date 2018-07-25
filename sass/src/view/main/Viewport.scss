@@ -35,6 +35,21 @@
     $background-color-over : $button-lightest-hover-background-color
 );
 
+@include extjs-button-small-ui(
+        $ui                       : 'cn-btn-medium-base-color',
+        $background-color         : $base-color,
+        $background-color-over    : darken($base-color, 5%),
+        $background-color-pressed : darken($base-color, 15%),
+        $border-color             : $lightest-color,
+        $border-color-pressed     : $lightest-color,
+        $font-size                : 14px,
+        $border-color-over        : $lightest-color,
+        $color                    : darken($lightest-color, 1%),
+        $split-line-color         : $lightest-color,
+        $arrow-glyph-color        : darken($lightest-color, 1%),
+        $glyph-color              : darken($lightest-color, 1%)
+);
+
 
 .x-mask {
     background-color : $lightest-color;
