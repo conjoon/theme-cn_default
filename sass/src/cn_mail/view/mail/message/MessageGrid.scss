@@ -75,14 +75,37 @@
             padding-top : 0px;
         }
 
-        .subject {
-            white-space   : nowrap;
+        .head {
             text-overflow : ellipsis;
+            overflow      : hidden;
+
             &.unread {
-                color : $base-color;
                 font-weight : bold;
+
+                .subject {
+                    color : $base-color;
+                }
+            }
+
+            .subject {
+                float         : left;
+                white-space   : nowrap;
+                text-overflow : ellipsis;
+                overflow      : hidden;
+                max-width     : calc(100% - 150px);
+
+            }
+
+            .date {
+                float         : right;
+                text-align    : right;
+                width         : 150px;
+                white-space   : nowrap;
+
             }
         }
+
+
 
         .previewText {
             padding       : 4px 0px 4px 0px;
