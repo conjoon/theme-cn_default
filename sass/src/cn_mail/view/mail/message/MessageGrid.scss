@@ -68,6 +68,16 @@
         font-size : 14px;
     }
 
+    tr.boldFont {
+        .x-grid-cell.previewLarge::before {
+            content  : "";
+            width    : 2px;
+            height   : 96%;
+            width    : 2px;
+            position : absolute;
+            background-color : $base-color;
+        }
+    }
 
     .cn_mail-mailmessagepreviewfeature{
 
@@ -82,7 +92,8 @@
             &.unread {
                 font-weight : bold;
 
-                .subject {
+                .subject,
+                .date {
                     color : $base-color;
                 }
             }
@@ -93,7 +104,6 @@
                 text-overflow : ellipsis;
                 overflow      : hidden;
                 max-width     : calc(100% - 150px);
-
             }
 
             .date {
