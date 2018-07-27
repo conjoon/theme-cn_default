@@ -26,12 +26,16 @@
     z-index  : 100000;
     background-color:inherit;
 
-    .item {
+    .cn-item {
         font-size : 16px;
         margin    : 4px 2px 2px 6px;
         color     : $button-lightest-color;
         cursor    : pointer;
         float     : left;
+
+        &.cn-over {
+            color : darken($button-lightest-color, 20%);
+        }
     }
 
 }
