@@ -68,6 +68,27 @@
         font-size : 14px;
     }
 
+    .cn-moved {
+        opacity         : 0.3!important;
+
+        + tr.cn_mail-mailmessagepreviewfeature {
+            opacity         : 0.3!important;
+        }
+    }
+
+    .cn-deleted {
+        opacity         : 0.3!important;
+        text-decoration : line-through!important;
+
+        + tr.cn_mail-mailmessagepreviewfeature {
+            opacity         : 0.3!important;
+            div {
+                text-decoration : line-through!important;
+            }
+        }
+
+    },
+
     tr.boldFont {
         .x-grid-cell.previewLarge::before {
             content  : "";
