@@ -1,10 +1,10 @@
 /**
  * conjoon
- * (c) 2007-2017 conjoon.org
+ * (c) 2007-2018 conjoon.org
  * licensing@conjoon.org
  *
  * theme-cn_default
- * Copyright (C) 2017 Thorsten Suckow-Homberg/conjoon.org
+ * Copyright (C) 2018 Thorsten Suckow-Homberg/conjoon.org
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -61,7 +61,6 @@
 
 .shadow-panel{
     @include box-shadow(3px, 3px, 6px, -3px, rgba(0,0,0,0.2));
-
 }
 
 .x-css-shadow{
@@ -79,4 +78,37 @@
 
 .boldFont {
     font-weight : bold;
+}
+
+.cn_comp-toast {
+
+    @include box-shadow(3px, 3px, 6px, -3px, rgba(0,0,0,0.2));
+
+    border : 1px solid #d8d8d8 !important;
+
+    .x-autocontainer-innerCt {
+        &:before {
+            font-family      : FontAwesome;
+            font-size        : 23px;
+            text-align       : center;
+            width            : 56px;
+            height           : 100%;
+            padding-top      : 15px;
+            position         : absolute;
+            top              : 0px;
+            left             : 0px;
+        }
+    }
+
+    &.warning {
+        .x-autocontainer-innerCt {
+            &:before {
+                background-color : #ea7b26;
+                color            : #f5cc9f;
+                content          : "\f071";
+            }
+        }
+
+    }
+
 }
