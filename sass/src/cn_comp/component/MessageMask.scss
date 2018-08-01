@@ -22,19 +22,19 @@
 
 .cn_comp-messagemask {
 
-    background-color : $lightest-color;
+   @include cn-mask();
 
     .x-mask-msg {
 
+        @include cn-mask-msg-container();
+        padding: 20px 40px 20px 40px;
+
         .badge {
-            font-size  : 176px;
+            font-size  : 76px;
             text-align : center;
             display    : block!important;
             color      : darken($lightest-color, 20%);
         }
-
-        background-color : $lightest-color;
-
 
         .x-mask-msg-text {
             margin-top  : 20px;
@@ -49,11 +49,11 @@
         }
 
         .message {
-            color      : darken($lightest-color, 40%);
-            min-width  : 250px;
-            max-width  : 350px;
-            padding    : 5px 0 5px 0;
-            text-align : left;
+            color       : darken($lightest-color, 40%);
+            min-width   : 250px;
+            white-space : nowrap;
+            padding     : 5px 0 5px 0;
+            text-align  : left;
         }
 
         .textInput {

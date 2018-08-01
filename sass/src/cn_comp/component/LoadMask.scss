@@ -22,17 +22,13 @@
 
 .cn_comp-loadmask {
 
-    background-color : rgba(255,255,255,0.6)!important;
+    @include cn-mask();
 
     .x-mask-msg {
 
-        border-radius : 6px;
-        border        : 1px solid darken($lightest-color, 10%);
-        display       : flex;
-
-        @include box-shadow(6px, 6px, 16px, 0, rgba(0,0,0,0.2));
-        background-color : $lightest-color;
-
+        @include cn-mask-msg-container();
+        display : flex;
+        
         .x-mask-msg-text {
             padding     : 0px;
             background  : none;
