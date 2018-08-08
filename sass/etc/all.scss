@@ -92,3 +92,9 @@
 .boldFont {
     font-weight : bold;
 }
+
+.x-btn-disabled {
+    &.x-btn-default-toolbar-small {
+        opacity : 0.2!important;
+    }
+}
