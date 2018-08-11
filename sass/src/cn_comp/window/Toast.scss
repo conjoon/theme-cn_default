@@ -47,7 +47,15 @@
                 content          : "\f071";
             }
         }
-
     }
 
+    &.info {
+        .x-autocontainer-innerCt {
+            &:before {
+                background-color : #d4d4d4;
+                color            : #f3f3f3;
+                content          : "\f05a";
+            }
+        }
+    }
 }
