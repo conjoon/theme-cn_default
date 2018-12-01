@@ -61,7 +61,6 @@
 
 @mixin cn-mask() {
     background-color: rgba(202, 202, 202, 0.4)!important;
-    background-color : $lightest-color;
 }
 
 *:focus {

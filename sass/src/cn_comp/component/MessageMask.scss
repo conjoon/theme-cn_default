@@ -1,10 +1,10 @@
 /**
  * conjoon
- * (c) 2007-2017 conjoon.org
+ * (c) 2007-2018 conjoon.org
  * licensing@conjoon.org
  *
  * theme-cn_default
- * Copyright (C) 2017 Thorsten Suckow-Homberg/conjoon.org
+ * Copyright (C) 2018 Thorsten Suckow-Homberg/conjoon.org
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,18 +22,24 @@
 
 .cn_comp-messagemask {
 
-   @include cn-mask();
+    &.dialog {
+        @include cn-mask();
+
+        .x-mask-msg {
+            @include cn-mask-msg-container();
+        }
+    }
+
 
     .x-mask-msg {
 
-        @include cn-mask-msg-container();
         padding: 20px 40px 20px 40px;
 
         .badge {
             font-size  : 76px;
             text-align : center;
             display    : block!important;
-            color      : darken($lightest-color, 20%);
+            color      : rgb(186,238,255);
         }
 
         .x-mask-msg-text {
