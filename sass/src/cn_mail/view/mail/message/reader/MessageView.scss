@@ -90,7 +90,11 @@
     }
 
     .cn_mail-body {
-        padding     : 8px 26px 14px 26px;
+        padding     : 8px 0px 0px 8px;
+    }
+
+    .cn_mail-mailmessagereadermessageviewiframe {
+        position:initial;
     }
 
     .cn_mail-top-toolbar {

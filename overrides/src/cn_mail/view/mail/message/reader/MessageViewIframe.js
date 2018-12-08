@@ -32,8 +32,8 @@ Ext.define('conjoon.cn_default.overrides.cn_mail.view.mail.message.reader.Messag
 
         return ["<style type=\"text/css\">",
             " body, html {",
-            " height:100%;",
-            " width:100%;",
+            " height:max-content;",
+            " width:max-content;",
             "margin:0px;",
             "padding:0px;",
             "}",
