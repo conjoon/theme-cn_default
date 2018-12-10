@@ -119,15 +119,24 @@
                 }
             }
 
-            .draft {
+            .draft,
+            .fa-mail-reply,
+            .fa-flag {
                 padding : 0 5px 0 0;
-                color   : #7a1919;
+            }
+
+            .fa-mail-reply {
+                color   : $base-color;
             }
 
             .fa-flag {
-                padding : 0 5px 0 0;
                 color   : #ff4398;
             }
+
+            .draft {
+                color   : #7a1919;
+            }
+
 
             .subject {
                 float         : left;
