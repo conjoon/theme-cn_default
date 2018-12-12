@@ -91,6 +91,28 @@
         border-left : none;
     }
 
+    .lastSavedDateField {
+        .x-form-display-field {
+            margin-top:0px;
+            padding-top:8px;
+            color:#a5a5a5;
+        }
+    }
+
+    .accountCombo {
+        .x-form-item-label-default {
+            color: #919191;
+        }
+        .x-form-trigger-wrap {
+            border: none;
+        }
+        input {
+            color : $base-color;
+            cursor: pointer;
+        }
+    }
+
+
     .attachmentlist-wrap {
         border         : 4px dashed lighten($base-color, 25%);
         border-radius  : 20px;
