@@ -1,10 +1,10 @@
 /**
  * conjoon
- * (c) 2007-2017 conjoon.org
+ * (c) 2007-2019 conjoon.org
  * licensing@conjoon.org
  *
  * theme-cn_default
- * Copyright (C) 2017 Thorsten Suckow-Homberg/conjoon.org
+ * Copyright (C) 2019 Thorsten Suckow-Homberg/conjoon.org
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,26 +20,37 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-.cn_mail-panel-body {
-
-    .messageGridContainer {
-
-        background-color: $tabpanel-w-borders-background;
+.cn_mail-mailaccountview {
 
 
-        .messageIndicator {
+  .x-panel-header {
+    background: $lightest-color;
+    border: none;
 
-            .icon {
-                color         : lighten($base-color, 30%);
-                font-size     : 96px;
-                margin-bottom : 12px;
-            }
-
-            position   : relative;
-            text-align : center;
-            font-size  : 14px;
-            top        : 50%;
-            transform  : translateY(-50%);
-        }
+    .x-title-text {
+      color: $color;
     }
+  }
+
+  .x-fieldset {
+    border:none!important;
+    background:none;
+
+    .x-fieldset-header {
+      .x-fieldset-header-text {
+        font-size:14px;
+      }
+    }
+
+    .x-fieldset-body {
+      background:$lightest-color;
+      padding:20px;
+      border:1px solid darken($lightest-color, 10%);
+      border-radius:6px;
+      @include box-shadow(3px, 3px, 6px, -3px, rgba(0,0,0,0.2));
+    }
+
+
+  }
+
 }
