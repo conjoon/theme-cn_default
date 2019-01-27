@@ -57,7 +57,9 @@ Ext.define('conjoon.cn_default.overrides.cn_mail.view.mail.folder.MailFolderTree
                         cls += ' cn_folder';
                     }
 
-                    if (isSub) {
+                    if (type === "account" && !record.previousSibling) {
+                        cls += ' first';
+                    } else if (isSub) {
                         cls += ' cn_subfolder';
                     }
 

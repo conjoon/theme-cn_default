@@ -29,8 +29,8 @@ $cn-draft-node-color : #faab8e;
 $cn-trash-node-color : #ffca58;
 
 
-$cn-inbox-node-light-color : lighten(#35BAF6, 35%);
-$cn-sent-node-light-color  : lighten(#f0b6fc, 10%);
-$cn-junk-node-light-color  : lighten(#8e98fa, 20%);
-$cn-draft-node-light-color : lighten(#faab8e, 20%);
-$cn-trash-node-light-color : lighten(#ffca58, 20%);
+$cn-inbox-node-light-color : lighten($cn-inbox-node-color, 35%);
+$cn-sent-node-light-color  : lighten($cn-sent-node-color, 10%);
+$cn-junk-node-light-color  : lighten($cn-junk-node-color, 17%);
+$cn-draft-node-light-color : lighten($cn-draft-node-color, 17%);
+$cn-trash-node-light-color : lighten($cn-trash-node-color, 27%);

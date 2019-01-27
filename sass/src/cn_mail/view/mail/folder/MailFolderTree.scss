@@ -55,7 +55,6 @@
     }
 
     .badge-unreadcount {
-        background-color : lighten($base-color, 20%);
         border-radius    : 3px;
         color            : white;
         font-size        : 10px;
@@ -67,70 +66,61 @@
     }
 
 
-    .x-grid-item-selected {
-        &.cn_folder {
-            &.cn_inbox {
-                background-color:$cn-inbox-node-light-color;
-            }
-
-            &.cn_sent {
-                background-color:$cn-sent-node-light-color;
-            }
-
-            &.cn_junk {
-                background-color:$cn-junk-node-light-color;
-            }
-
-            &.cn_draft {
-                background-color:$cn-draft-node-light-color;
-            }
-
-            &.cn_trash {
-                background-color:$cn-trash-node-light-color;
-            }
-        }
-    }
-
     .x-grid-item {
 
-        &.x-grid-item-over {
-            background-color:#e6f1f6 !important;
-        }
 
         &.cn_account {
-            margin-top:12px;
+            margin-top:16px;
 
             .x-tree-node-text {
                 font-weight:bold;
                 padding-left:16px;
             }
+
+            &.first {
+                margin-top:0px;
+            }
         }
 
         &.cn_subfolder {
+
             &.cn_inbox {
-                background-color:$cn-inbox-node-light-color;
+                .badge-unreadcount {
+                    background-color:$cn-inbox-node-color;
+                }
+                background-color:lighten($cn-inbox-node-light-color, 3%);
             }
 
             &.cn_sent {
-                background-color:$cn-sent-node-light-color;
+                .badge-unreadcount {
+                    background-color:$cn-sent-node-color;
+                }
+                background-color:lighten($cn-sent-node-light-color, 3%);
             }
 
             &.cn_junk {
-                background-color:$cn-junk-node-light-color;
+                .badge-unreadcount {
+                    background-color:$cn-junk-node-color;
+                }
+                background-color:lighten($cn-junk-node-light-color, 3%);
             }
 
             &.cn_draft {
-                background-color:$cn-draft-node-light-color;
+                .badge-unreadcount {
+                    background-color:$cn-draft-node-color;
+                }
+                background-color:lighten($cn-draft-node-light-color, 3%);
             }
 
             &.cn_trash {
-                background-color:$cn-trash-node-light-color;
+                .badge-unreadcount {
+                    background-color:$cn-trash-node-color;
+                }
+                background-color:lighten($cn-trash-node-light-color, 3%);
             }
         }
 
         &.cn_folder {
-
-            margin-top:4px;
 
             .badge-unreadcount {
                 top : 12px;
@@ -161,29 +151,60 @@
 
 
             &.cn_inbox {
+                .badge-unreadcount,
                 .x-tree-icon {
                     background-color: $cn-inbox-node-color;
                 }
             }
             &.cn_sent {
+                .badge-unreadcount,
                 .x-tree-icon {
                     background-color: $cn-sent-node-color;
                 }
             }
             &.cn_junk {
+                .badge-unreadcount,
                 .x-tree-icon {
                     background-color: $cn-junk-node-color;
                 }
             }
             &.cn_draft {
+                .badge-unreadcount,
                 .x-tree-icon {
                     background-color: $cn-draft-node-color;
                 }
             }
             &.cn_trash {
+                .badge-unreadcount,
                 .x-tree-icon {
                     background-color: $cn-trash-node-color;
                 }
+            }
+        }
+    }
+
+    .x-grid-item-over,
+    .x-grid-item-selected {
+        &.cn_subfolder,
+        &.cn_folder {
+            &.cn_inbox {
+                background-color:$cn-inbox-node-light-color;
+            }
+
+            &.cn_sent {
+                background-color:$cn-sent-node-light-color;
+            }
+
+            &.cn_junk {
+                background-color:$cn-junk-node-light-color;
+            }
+
+            &.cn_draft {
+                background-color:$cn-draft-node-light-color;
+            }
+
+            &.cn_trash {
+                background-color:$cn-trash-node-light-color;
             }
         }
     }
