@@ -54,9 +54,15 @@
 
 
         .message-subject {
-            line-height : 1.7em;
 
-            padding : 5px;
+            div {
+                text-overflow : ellipsis;
+                white-space   : nowrap;
+                overflow      : hidden;
+            }
+
+            line-height : 1.7em;
+            padding : 0px;
 
             .fa-paperclip {
                 padding : 0 5px 0 0;
@@ -64,7 +70,7 @@
 
             .draft {
                 padding : 0 5px 0 0;
-                color   : #7a1919;
+                color   : $cn-draft-color;
             }
 
             .from {
@@ -75,9 +81,6 @@
                 font-size     : 22px;
                 max-width     : 95%;
                 padding       : 4px 0 2px 0;
-                text-overflow : ellipsis;
-                white-space   : nowrap;
-                overflow      : hidden;
             }
         }
 

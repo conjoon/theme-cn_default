@@ -20,6 +20,60 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
+$cn-draft-color : #16668a;
+
+$lightest-color : #ffffff;
+$color-soft-darkblue : #32404e;
+
+$panel-navigation-background-color : $color-soft-darkblue;
+$panel-navigation-item-line-height : 64px;
+$panel-navigation-item-text-color  : #ADB3B8;
+
+$tabpanel-w-borders-background : #f6f6f6;
+
+
+$circle-border-radius : 50%;
+$base-border-color    : #ddd;
+$lightest-color       : #fff;
+$darkest-color        : #000000;
+
+$placeholder-color : darken($lightest-color, 30%);
+
+//Form and Toolbar Button UI colors
+$color-blue        : #167abc;
+$color-soft-cyan   : #03b4d5;
+$color-soft-blue   : #2eadf5;
+$color-soft-green  : #9cc96b;
+$color-soft-red    : #e44959;
+$color-soft-purple : #925e8b;
+$color-gray        : #949495;
+$color-green       : #16b603;
+
+$blank-page-background-color : #ebebeb;
+$blank-page-color            : #cacaca;
+
+$button-lightest-background-color       : transparent;
+$button-lightest-border-color           : darken($lightest-color, 10%);
+$button-lightest-color                  : darken($lightest-color, 50%);
+$button-lightest-hover-background-color : #efefef;
+
+
+// Create placeholder mixin
+::-webkit-input-placeholder {
+    color       : $placeholder-color;
+    font-weight : normal;
+}
+:-moz-placeholder {
+    color : $placeholder-color;
+}
+::-moz-placeholder {
+    color : $placeholder-color;
+}
+:-ms-input-placeholder {
+    color : $placeholder-color;
+}
+
 @mixin btn-border($background-color){
     background-color : $background-color;
     border-color     : $background-color !important;
@@ -96,4 +150,8 @@
     &.x-btn-default-toolbar-small {
         opacity : 0.2!important;
     }
+}
+
+.cn-lightestBox {
+    background:$lightest-color;
 }
