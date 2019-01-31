@@ -22,14 +22,25 @@
 
 .cn_mail-mailaccountview {
 
+  .x-panel-body-default {
+    background:none;
+  }
 
+  .x-toolbar-footer,
   .x-panel-header {
     background: $lightest-color;
-    border: none;
+  }
 
+  .x-panel-header {
+    border: none;
     .x-title-text {
       color: $color;
     }
+  }
+
+  .fieldsetCnt {
+    @include box-shadow(3px, 3px, 6px, -3px, rgba(0,0,0,0.2));
+    background:$lightest-color;
   }
 
   .x-fieldset {
@@ -44,11 +55,8 @@
 
     .x-fieldset-body {
       background:$lightest-color;
-      padding:20px;
-      border:1px solid darken($lightest-color, 10%);
-      border-radius:6px;
-      @include box-shadow(3px, 3px, 6px, -3px, rgba(0,0,0,0.2));
-    }
+      border:none;
+   }
 
 
   }
