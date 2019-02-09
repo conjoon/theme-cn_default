@@ -165,4 +165,25 @@
         }
     }
 
+    .x-grid-empty {
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        font-size:14px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &::before {
+            color:lighten($base-color, 30%);
+            font-size:96px;
+            font-family:FontAwesome;
+            content : '\f115'
+        }
+
+    }
+
 }
