@@ -25,7 +25,7 @@
  */
 Ext.define('conjoon.cn_default.overrides.cn_user.view.authentication.AuthForm', {
 
-    override: 'conjoon.cn_user.view.authentication.AuthForm',
+    override: 'coon.user.view.authentication.AuthForm',
 
 
     initComponent : function() {

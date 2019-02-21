@@ -20,27 +20,25 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-describe('conjoon.cn_default.overrides.cn_treenavviewport.view.NavigationToolbarTest', function(t) {
+describe('conjoon.cn_default.overrides.cn_navport.view.NavigationTreeTest', function(t) {
 
-    var toolbar;
+    var tree;
 
     t.afterEach(function() {
-        if (toolbar) {
-            toolbar.destroy();
-            toolbar = null;
+        if (tree) {
+            tree.destroy();
+            tree = null;
         }
     });
 
     // load override first
-    t.requireOk('conjoon.cn_default.overrides.cn_treenavviewport.view.NavigationToolbar', function() {
+    t.requireOk('conjoon.cn_default.overrides.cn_navport.view.NavigationTree', function() {
 
-        t.it("Should properly override the NavigationToolbar", function(t) {
+        t.it("Should properly override the NavigationTree", function(t) {
 
-            toolbar = Ext.create('conjoon.cn_treenavviewport.view.NavigationToolbar');
+            tree = Ext.create('coon.navport.view.NavigationTree');
 
-            t.expect(toolbar.down('component').reference).toContain('cn_treenavviewport_ref_applogo');
-
-            t.expect(toolbar.down('button').reference).toContain('cn_treenavviewport_ref_hidenavbtn');
+            t.expect(tree.getUi()).toBe('cn_navport-navtree');
         });
 
     });

@@ -23,9 +23,9 @@
 /**
  * Custom styles for the intiial Navigation Toolbar.
  */
-Ext.define('conjoon.cn_default.overrides.cn_treenavviewport.view.NavigationToolbar', {
+Ext.define('conjoon.cn_default.overrides.cn_navport.view.NavigationToolbar', {
 
-    override : 'conjoon.cn_treenavviewport.view.NavigationToolbar',
+    override : 'coon.navport.view.NavigationToolbar',
 
     initComponent : function() {
 

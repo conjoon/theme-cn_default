@@ -36,7 +36,7 @@ describe('conjoon.cn_default.overrides.cn_user.view.authentication.AuthForm', fu
 
         t.it("Should properly override the AuthForm", function(t) {
 
-            var form = Ext.create('conjoon.cn_user.view.authentication.AuthForm', {renderTo : document.body});
+            var form = Ext.create('coon.user.view.authentication.AuthForm', {renderTo : document.body});
 
             t.expect(form.items.getAt(0).cls).toContain('x-fa');
             t.expect(form.items.getAt(0).cls).toContain('head-label');

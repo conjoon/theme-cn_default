@@ -20,13 +20,31 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/**
- * Custom ui for the NavigationTree.
- */
-Ext.define('conjoon.cn_default.overrides.cn_treenavviewport.view.NavigationTree', {
+describe('conjoon.cn_default.overrides.cn_navport.view.NavigationToolbarTest', function(t) {
 
-    override : 'conjoon.cn_treenavviewport.view.NavigationTree',
+    var toolbar;
 
-    ui : 'cn_treenavviewport-navtree'
+    t.afterEach(function() {
+        if (toolbar) {
+            toolbar.destroy();
+            toolbar = null;
+        }
+    });
+
+    // load override first
+    t.requireOk('conjoon.cn_default.overrides.cn_navport.view.NavigationToolbar', function() {
+
+        t.it("Should properly override the NavigationToolbar", function(t) {
+
+            toolbar = Ext.create('coon.navport.view.NavigationToolbar');
+
+            t.expect(toolbar.down('component').reference).toContain('cn_navport_ref_applogo');
+
+            t.expect(toolbar.down('button').reference).toContain('cn_navport_ref_hidenavbtn');
+        });
+
+    });
+
+
 
 });

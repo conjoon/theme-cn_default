@@ -20,29 +20,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-describe('conjoon.cn_default.overrides.cn_treenavviewport.view.NavigationTreeTest', function(t) {
+/**
+ * Custom ui for the NavigationTree.
+ */
+Ext.define('conjoon.cn_default.overrides.cn_navport.view.NavigationTree', {
 
-    var tree;
+    override : 'coon.navport.view.NavigationTree',
 
-    t.afterEach(function() {
-        if (tree) {
-            tree.destroy();
-            tree = null;
-        }
-    });
-
-    // load override first
-    t.requireOk('conjoon.cn_default.overrides.cn_treenavviewport.view.NavigationTree', function() {
-
-        t.it("Should properly override the NavigationTree", function(t) {
-
-            tree = Ext.create('conjoon.cn_treenavviewport.view.NavigationTree');
-
-            t.expect(tree.getUi()).toBe('cn_treenavviewport-navtree');
-        });
-
-    });
-
-
+    ui : 'cn_navport-navtree'
 
 });
