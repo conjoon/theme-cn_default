@@ -1,7 +1,7 @@
 var harness = new Siesta.Harness.Browser.ExtJS();
 
 harness.configure({
-    title          : 'My Tests',
+    title          : 'theme-cn_default',
     disableCaching : true,
     loaderPath     : {
 
