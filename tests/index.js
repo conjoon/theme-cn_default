@@ -6,15 +6,11 @@ harness.configure({
     loaderPath     : {
 
         'conjoon.cn_default.overrides.cn_navport' : '../overrides/src/coon/navport',
-        'conjoon.cn_default.overrides.cn_user'            : '../overrides/src/coon/user',
-        'conjoon.cn_default.overrides.cn_mail'            : '../overrides/src/conjoon/cn_mail',
 
         /**
          * Classic
          */
         'coon.navport.view' : '../../app-cn_navport/classic/src/view',
-        'coon.user.view'            : '../../app-cn_user/classic/src/view',
-        'conjoon.cn_mail.view'            : '../../app-cn_mail/classic/src/view',
 
         /**
          * Requirements
@@ -51,37 +47,6 @@ harness.start({
                     './overrides/src/coon/navport/view/NavigationToolbarTest.js',
                     './overrides/src/coon/navport/view/NavigationTreeTest.js'
                 ]
-            }]
-        }, {
-            group : 'user',
-            items : [{
-                group : 'view',
-                items : [{
-                    group : 'authentication',
-                    items : [
-                        './overrides/src/coon/user/view/authentication/AuthFormTest.js'
-                    ]
-                }]
-            }]
-        }]
-    }, {
-        group : 'conjoon',
-        items : [{
-            group : 'cn_mail',
-            items : [{
-                group : 'view',
-                items : [{
-                    group : 'mail',
-                    items : [{
-                        group : 'message',
-                        items : [{
-                            group : 'reader',
-                            items : [
-                                './overrides/src/conjoon/cn_mail/view/mail/message/reader/MessageViewIframeTest.js'
-                            ]
-                        }]
-                    }]
-                }]
             }]
         }]
     }]
