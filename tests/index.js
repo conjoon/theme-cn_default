@@ -10,7 +10,7 @@ harness.configure({
         /**
          * Classic
          */
-        'coon.navport.view' : '../../app-cn_navport/classic/src/view',
+        'coon.navport.view' : '../../lib-cn_navport/classic/src/view',
 
         /**
          * Requirements
@@ -21,11 +21,11 @@ harness.configure({
 
         'coon.core' : '../../lib-cn_core/src',
 
-        'coon.navport.view.controller' : '../../app-cn_navport/src/view/controller',
+        'coon.navport.view.controller' : '../../lib-cn_navport/src/view/controller',
 
-        'coon.navport.store' : '../../app-cn_navport/src/store',
-        'coon.navport.model' : '../../app-cn_navport/src/model',
-        'coon.navport.data'  : '../../app-cn_navport/src/data'
+        'coon.navport.store' : '../../lib-cn_navport/src/store',
+        'coon.navport.model' : '../../lib-cn_navport/src/model',
+        'coon.navport.data'  : '../../lib-cn_navport/src/data'
 
 
     },

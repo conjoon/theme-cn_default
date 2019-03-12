@@ -15,7 +15,7 @@ The following naming conventions apply:
 
 # Usage
 ## Requirements
-This package requires the [app-cn_navport](https://github.com/coon-js/app-cn_navport) package of the [coon.js](https://github.com/coon-js) project,
+This package requires the [lib-cn_navport](https://github.com/coon-js/lib-cn_navport) package of the [coon.js](https://github.com/coon-js) project,
 due to overrides appliedby this theme.
 
 # Usage

@@ -53,7 +53,7 @@
         "example": null,
         "framework": "ext",
         "requires": [
-            "app-cn_navport"
+            "lib-cn_navport"
         ]
     }
 }
