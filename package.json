@@ -27,6 +27,9 @@
                 "version": "ES6"
             }
         },
+        "compressor": {
+            "polyfills": "none"
+        },
         "local": true,
         "theme": "theme-triton",
         "sass" : {
