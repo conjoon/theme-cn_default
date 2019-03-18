@@ -27,8 +27,17 @@
 
     @include cn-mask-msg-container();
 
+    height:auto!important;
+    width:auto!important;
+    border:none!important;
+
+    .x-window-body-default {
+        background-color:$color-soft-darkblue;
+    }
+
     .x-autocontainer-innerCt {
-        color:#999;
+        color:#c2c2c2;
+        white-space:nowrap;
         &:before {
             font-family      : FontAwesome;
             font-size        : 23px;
